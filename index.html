@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <title>Responsiv Design Exo 7</title>
+</head>
+<body>
+  <!--card-->
+  <div class="container">
+    <div class="card text-center m-4">
+      <div class="card-body">
+        <h1 class="h5 card-title font-weight-bold">La Manu Le Havre</h1>
+        <p class="card-text">L'Ecole des métiers du Numérique.</p>
+        <!-- Button avec ancre exemple -->
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#informationModal">+ d'infos</a>
+          <!-- Button avec bouton exemple -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#informationModal">
+  + d'infos
+</button>
+      </div>
+    </div>
+    <!--modal-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="informationModal" aria-labelledby="laManuModalLabel" aria-hidden="true">
+      <!--tabindex pour la navigation au clavier-->
+      <!--role dialog pour dire que le modal sert à donner un message-->
+      <div class="modal-dialog" role="document">
+        <!--contient le reste du modal-->
+        <div class="modal-content">
+          <!--la structure de la modal-->
+          <div class="modal-header">
+            <h2 class="h5 modal-title" id="laManuModalLabel">La Manu Le Havre</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body bg-primary text-center">
+            <a title="Lien vers La Manu Le Havre" class="text-white" href="https://lamanu.fr/le-havre">https://lamanu.fr/le-havre</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">X Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--script-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
